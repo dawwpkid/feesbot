@@ -5921,7 +5921,7 @@ joreply(String(e))
 
 
         
-	if (budy.startsWith('$')) {
+	if (budy.startsWith('$')) 
 if (!isCreator) return m.reply(mess.botowner)
 exec(budy.slice(2), (err, stdout) => {
 if (err) return m.reply(`${err}`)
